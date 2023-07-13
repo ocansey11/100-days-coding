@@ -24,6 +24,16 @@ let events = {
   },
 };
 
+//code to address bug of container out-growing its section
+function adjustSectionHeight() {
+  let containerHeight = container.scrollHeight;
+  var day1Section = document.querySelector(".day1");
+  day1Section.style.height = 300 + containerHeight + "px";
+  console.log(containerHeight, day1Section);
+}
+
+//
+
 // declare device type and booleans
 let deviceType = "";
 let draw = false;
@@ -42,6 +52,7 @@ const isTouchDevice = () => {
 
 isTouchDevice();
 
+//function for creating grid
 gridButton.addEventListener("click", () => {
   container.innerHTML = "";
   let count = 0;
@@ -81,6 +92,7 @@ gridButton.addEventListener("click", () => {
 
     container.appendChild(div);
   }
+  adjustSectionHeight();
 });
 
 function checker(elementId) {
@@ -102,10 +114,14 @@ clearGridButton.addEventListener("click", () => {
 
 eraseBtn.addEventListener("click", () => {
   erase = true;
+  eraseBtn.style.border = "3px solid black";
+  paintBtn.style.border = "none";
 });
 
 paintBtn.addEventListener("click", () => {
   erase = false;
+  paintBtn.style.border = "3px solid black";
+  eraseBtn.style.border = "none";
 });
 
 gridWidth.addEventListener("input", () => {

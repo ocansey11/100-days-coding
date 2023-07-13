@@ -5,12 +5,16 @@
   font-size: medium;
   font-family: monospace;
 }
-body {
+
+.day1 {
+  position: relative;
   background-color: #43a047;
+  min-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
 }
 .wrapper {
   width: 80vmin;
-  /* // */
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
@@ -92,13 +96,13 @@ button {
 } */
 
 .container {
-  border: 1px solid black;
+  margin: auto;
 }
 
 .gridCol {
   height: 1em;
   width: 1em;
-  border: 1px solid aliceblue;
+  border: 1px solid black;
 }
 .gridRow {
   display: flex;
