@@ -93,10 +93,4 @@ const highlighterRemover = (className) => {
   });
 };
 
-formatButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    button.classList.toggle("active");
-  });
-});
-
 window.onload = initializer();
