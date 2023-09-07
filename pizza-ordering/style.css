@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  gap: 2%;
+  align-items: flex-start;
+}
+
+nav {
+  width: 25%;
+  text-align: center;
+  min-height: 100vh;
+  padding: 60px 30px;
+}
+
+ul {
+  padding: 20px;
+  background-color: lightblue;
+  margin-top: 5rem;
+}
+li {
+  margin-top: 20px;
+  list-style: none;
+  cursor: pointer;
+}
+li:hover {
+  transform: scale(1.2);
+}
+
+.box {
+  background-color: antiquewhite;
+}
+
+/* Table */
+/* table {
+  margin-top: 12rem;
+  max-height: 300px;
+  max-width: 70%;
+} */
+/* thead {
+  margin-top: 6rem;
+  max-height: 50px;
+  line-height: 2px;
+}
+th {
+  padding: 10px 18px;
+  max-height: 20px;
+} */
+form {
+  padding: 90px 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 10px;
+}
+form > div {
+  padding: 10px;
+}
+fieldset {
+  padding: 16px;
+  width: 80%;
+  margin: auto;
+}
+form > div > h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.radio-item {
+  padding-bottom: 1rem;
+}

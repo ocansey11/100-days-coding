@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza-Out</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <h3>Pizza Yard</h3>
+        <span>Our popular Menu</span>
+        <ul class="pizzaList">
+          <li class="magerita pizza">Magerita Pizza</li>
+          <li class="cheesy pizza">Cheesy Pizza <i>></i></li>
+          <li class="bamboni pizza">Bamboni Pizza <i>></i></li>
+          <li class="delight pizza">Delight Pizza <i>></i></li>
+          <li class="continental pizza">Continental Pizza <i>></i></li>
+          <li class="curren$y pizza">Curren$y Special Pizza <i>></i></li>
+          <li class="hawaiian pizza">Hawaiian Pizza <i>></i></li>
+          <li class="buffalo pizza">Buffalo Pizza <i>></i></li>
+        </ul>
+      </nav>
+      <form action="">
+        <div class="card">
+          <h3>Size</h3>
+          <fieldset>
+            <legend>Select your Pizza's Size:</legend>
+            <div class="radio-item">
+              <input type="radio" name="drone" value="small" checked />
+              <label for="huey">small</label>
+            </div>
+            <div class="radio-item">
+              <input type="radio" name="drone" value="medium" />
+              <label for="dewey">Medium</label>
+            </div>
+            <div class="radio-item">
+              <input type="radio" name="drone" value="large" />
+              <label for="louie">LARGE</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="card">
+          <h3>Toppings</h3>
+
+          <fieldset class="toppings-field">
+            <legend>Choose your favorite toppings:</legend>
+
+            <div class="toppings-item">
+              <input type="checkbox" name="scales" checked />
+              <label for="cheese">more cheese</label>
+            </div>
+
+            <div class="toppings-item">
+              <input type="checkbox" id="horns" name="horns" />
+              <label for="horns">Horns</label>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="card">
+          <h3>Quantity</h3>
+          <div>
+            <input type="number" name="amount" min="0" max="11" />
+            <label for="amount">Number of Pizzas</label>
+          </div>
+
+          <button type="submit">add to cart</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
